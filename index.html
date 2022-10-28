@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <h1>Movies</h1>
+        <ul>
+            <li><a class="nav__link" href="#">Home</a></li>
+            <li><a class="nav__link" href="#">Find your Movie</a></li>
+            <li><a class="nav__link nav__link--secondary" href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="landing-page">
+        <h1 class="search-title">Browse Our Movies</h1>
+        <div class="search__wrapper">
+            <input class="search-bar" type="text" placeholder="Search Movies here" onchange="onSearchChange(event)">
+            <i class="fa fa-magnifying-glass"></i>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="search-result">
+                    <h2 class="search-result__title"></h2>
+                    <div class="range_container">
+                        <div class="sliders_control">
+                            <input id="fromSlider" type="range" value="10" min="0" max="100"/>
+                            <input id="toSlider" type="range" value="40" min="0" max="100"/>
+                        </div>
+                        <div class="form_control">
+                            <div class="form_control_container">
+                                <div class="form_control_container__time">Min</div>
+                                <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
+                            </div>
+                            <div class="form_control_container">
+                                <div class="form_control_container__time">Max</div>
+                                <input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-list">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body> 
+
+<script src="index.js"></script>
+
+</html>
